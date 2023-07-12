@@ -8,6 +8,8 @@ format:
 ::: {.g-col-2}
 :::
 ::: {.g-col-8}
+![](img/progress.png){width=20% height=20%}
+
 ![](img/me_ice_cream.png){width=20% height=20% style="border-radius: 50%"}
 
 :::{.h2 .text-warning}
@@ -27,11 +29,9 @@ Education
 :::
 
 :::{.text-info}
-TU Delft | Delft, NL
-PhD Testing and Validation of AI-Intensive Systems | May 2022 - May 2026
+TU Delft | Delft, NL | PhD Testing and Validation of AI-Intensive Systems | May 2022 - May 2026
 
-University of Plymouth | Plymouth, UK
-BSc Computing | Sept 2003 - June 2007
+University of Plymouth | Plymouth, UK | BSc Computing | Sept 2003 - June 2007
 :::
 
 :::

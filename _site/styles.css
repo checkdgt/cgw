@@ -1,5 +1,9 @@
 /* css styles */
 
+.navbar-brand > img {
+    max-height: 50px;
+}
+
 .top-grid {
     margin-top: 100px;
     align-items: center;
