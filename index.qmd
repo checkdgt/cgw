@@ -21,7 +21,7 @@ I am PhD candidate at TU Delft University in the Netherlands.
 
 I specialise in applying tradtitional test techniques to Machine Learning pipelines.
 
-The overall goal of my research is to take the application from data validation all the way through to deployment in Cyber-Physical systems.
+The overall goal of my research, is to take the pipeline, from data validation, all the way through to deployment in Cyber-Physical systems.
 :::
 
 :::{.h2 .text-warning}
