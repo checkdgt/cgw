@@ -1,0 +1,40 @@
+---
+format:
+    html:
+        page-layout: custom
+---
+
+::: {.grid .top-grid}
+::: {.g-col-2}
+:::
+::: {.g-col-8}
+![](img/me_ice_cream.png){width=20% height=20% style="border-radius: 50%"}
+
+:::{.h2 .text-warning}
+Antony Bartlett PhD
+:::
+
+:::{.text-info}
+I am PhD candidate at TU Delft University in the Netherlands.
+
+I specialise in applying tradtitional test techniques to Machine Learning pipelines.
+
+The overall goal of my research is to take the application from data validation all the way through to deployment in Cyber-Physical systems.
+:::
+
+:::{.h2 .text-warning}
+Education
+:::
+
+:::{.text-info}
+TU Delft | Delft, NL
+PhD Testing and Validation of AI-Intensive Systems | May 2022 - May 2026
+
+University of Plymouth | Plymouth, UK
+BSc Computing | Sept 2003 - June 2007
+:::
+
+:::
+::: {.g-col-2}
+:::
+:::
