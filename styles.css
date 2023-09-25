@@ -11,6 +11,10 @@
     text-align: center;
 }
 
+.text-info {
+    text-align: left;
+}
+
 h2 {
     color: red;
 }
