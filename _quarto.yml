@@ -14,11 +14,16 @@ website:
         text: Home
       - href: publications.qmd
         text: My Work
+      - href: conferences.qmd
+        text: Conferences
 
 format:
   html:
     theme:
       light: vapor
       dark: darkly
+    mainfont: monospace
+    fontsize: 1.1em
+    linestretch: 1.1
     css: styles.css
     toc: true

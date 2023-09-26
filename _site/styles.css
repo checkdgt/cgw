@@ -5,14 +5,25 @@
 }
 
 .top-grid {
-    margin-top: 100px;
+    margin-top: 50px;
     align-items: center;
     align-self: center;
     text-align: center;
 }
 
+.left-grid {
+    margin-top: -300px;
+    vertical-align: top;
+    align-items: top;
+    align-self: top;
+}
+
 .text-info {
     text-align: left;
+}
+
+p.information {
+    color: white;
 }
 
 h2 {

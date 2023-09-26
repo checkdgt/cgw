@@ -1,0 +1,19 @@
+
+- category: Upcoming Conferences
+  description: |
+    Just keeping a list of upcoming conferences that are of interest to me ^_^
+  tiles:
+    - title: ICST'24
+      subtitle: ''
+      href: https://conf.researchr.org/home/icst-2024
+      code: icst24
+      thumbnail: img/conf/6486.svg
+      paper: '10/25/2023'
+      abstract: '10/18/2023'
+    - title: ICSE'24
+      subtitle: SBFT'24
+      href: https://sbft24.github.io/
+      code: sbft24
+      thumbnail: img/conf/7634.svg
+      paper: '11/09/2023'
+      comp: '11/09/2023'
