@@ -17,3 +17,13 @@
       thumbnail: img/conf/7634.svg
       paper: '11/09/2023'
       comp: '11/09/2023'
+
+- category: Waiting for a date
+  description: |
+    Important conferences which may not have a date available yet ...
+  tiles:
+    - title: FSC/ESEC'24
+      subtitle: ''
+      href: https://2024.esec-fse.org/
+      code: fscesec24
+      thumbnail: img/conf/9232.svg

@@ -62,7 +62,11 @@
           <script>setTimer("<%- tile.abstract %>", "abstract<%- tile.code %>");</script>
           <br>
         <% } %>
-        <div>Paper: <div id="paper<%- tile.code %>"></div></div>
+        <% if (tile.paper) { %> 
+          <div>Paper: <div id="paper<%- tile.code %>"></div></div>
+          <script>setTimer("<%- tile.paper %>", "paper<%- tile.code %>");</script>
+          <br>
+        <% } %>
         <% if (tile.comp) { %>
           <br>
           <div>Competition: <div id="comp<%- tile.code %>"></div></div>
@@ -70,9 +74,6 @@
         <% } %>
         <br>
       </small>
-      <script>
-        setTimer("<%- tile.paper %>", "paper<%- tile.code %>");
-      </script>
       <a href="<%- tile.href %>">
         <img src="<%- tile.thumbnail %>" alt="<%- tile.description %>" class="card-img-top" width="200" height="200"/>
       </a>
