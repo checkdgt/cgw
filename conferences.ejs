@@ -1,0 +1,92 @@
+
+```{=html}
+<script>
+  // Set the date we're counting down to
+  function setTimer(date, uid) {
+    let countDownDate = new Date(date).getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById(uid).innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById(uid).innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  }
+</script>
+<script>
+  function getTime(end_time) {
+      let end = new Date(end_time);
+      return end
+  }
+</script>
+<% for (const item of items) { %>
+
+<h2 class="text-warning"><%- item.category %></h2>
+
+<p><%- item.description %></p>
+
+<div class="list grid" style="column-gap: 10px;">
+
+<% for (const tile of item.tiles) { %>
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" <%= metadataAttrs(tile) %>>
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <small class="card-text inline-block">
+        <a href="<%- tile.href %>" class="listing-title" style="color: DarkSlateBlue"><%= tile.title %></a>
+        <% if (tile.code) { %> 
+        <a href="<%- tile.href %>" title="View source code" 
+          class="source-code card-text float-end inline-block">
+          <i class="bi-balloon-heart-fill"></i>
+        </a>
+        <% } %>
+        <span class="text-muted listing-subtitle"><%= tile.subtitle %></span>
+        <hr>
+        <% if (tile.abstract) { %> 
+          <div>Abstract: <div id="abstract<%- tile.code %>"></div></div>
+          <script>setTimer("<%- tile.abstract %>", "abstract<%- tile.code %>");</script>
+          <br>
+        <% } %>
+        <div>Paper: <div id="paper<%- tile.code %>"></div></div>
+        <% if (tile.comp) { %>
+          <br>
+          <div>Competition: <div id="comp<%- tile.code %>"></div></div>
+          <script>setTimer("<%- tile.comp %>", "comp<%- tile.code %>");</script>
+        <% } %>
+        <br>
+      </small>
+      <script>
+        setTimer("<%- tile.paper %>", "paper<%- tile.code %>");
+      </script>
+      <a href="<%- tile.href %>">
+        <img src="<%- tile.thumbnail %>" alt="<%- tile.description %>" class="card-img-top" width="200" height="200"/>
+      </a>
+    </div>
+    
+    <% if (tile.publicationdate) { %> 
+      <b class="listing-publicationdate"><%= tile.publicationdate %></b>
+    <% } %>
+    
+  </div>
+<% } %>
+
+</div>
+
+<% } %>
+
+```

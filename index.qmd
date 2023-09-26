@@ -7,7 +7,7 @@ format:
 ::: {.grid .top-grid}
 ::: {.g-col-2}
 :::
-::: {.g-col-2}
+::: {.g-col-2 .left-grid}
 ![](img/me_ice_cream.png){width=100% height=100% style="border-radius: 50%"}
 :::
 ::: {.g-col-1}
@@ -18,9 +18,13 @@ Antony Bartlett PhD
 :::
 
 :::{.text-info}
-<span>
-I am a PhD candidate at TU Delft in the Netherlands. I specialise in applying traditional test techniques to Machine Learning pipelines. The overall goal of my research, is to take the pipeline, from data validation, all the way through to deployment in Cyber-Physical systems.
-</span>
+
+<p class="information">I am a PhD candidate at TU Delft in the Netherlands.</p>
+<p class="information">Having spent a considerable time in industry, building test pipelines for numerous applications, I decided it was time for a new adventure.</p>
+<p class="information">Leveraging my decade plus years of testing experience, along with my passion for new technology, I now specialise in applying traditional test techniques to Machine Learning pipelines.</p>
+<p class="information">The overall goal of my research, is to take test pipelines from data validation, all the way through to deployment in Cyber-Physical systems.</p>
+</p>
+
 :::
 
 :::{.h2 .text-warning}
@@ -28,19 +32,42 @@ Education
 :::
 
 :::{.text-info}
-<pre>
-PhD Testing and Validation of AI-Intensive Systems
-TU Delft
-Delft, NL | May 2022 - May 2026
-</pre>
-<pre>
-BSc Computing
-University of Plymouth
-Plymouth, UK | Sept 2003 - June 2007
-</pre>
+
+<p class="information">PhD Testing and Validation of AI-Intensive Systems
+<br>TU Delft
+<br>Delft, NL | May 2022 - May 2026
+</p>
+<p class="information">BSc Computing
+<br>University of Plymouth
+<br>Plymouth, UK | Sept 2003 - June 2007
+</p>
+:::
+
+:::{.h2 .text-warning}
+Industry
+:::
+
+:::{.text-info}
+<p class="information">
+HOME Agency, UK
+<br>Testing numerous webapps, specifically MARS.
+<br>Test Automation, Javascript, webdriverio, Python
+</p>
+
+<p class="information">IBM (Aspera), USA
+<br>Testing the broader Aspera product line.
+<br>Test Automation, TestOps, Ruby, Python, CircleCI, Jenkins, API (REST), websockets
+</p>
+
+<p class="information">IBM (Cognos, Temtec), Netherlands
+<br>Testing for IBM Watson visualizations
+<br>Test Automation, TestOps, Java, Python, Jenkins, API (REST)
+</p>
 :::
 
 :::
 ::: {.g-col-1}
 :::
 :::
+
+Built with <a target="_" href="https://quarto.org/">![](img/quarto.png){width=10% height=10%}</a>!
