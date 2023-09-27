@@ -1,9 +1,9 @@
 ---
-pagetitle: "Gallery"
+pagetitle: "Conferences"
 format:
   html:
     toc: false
-image: articles/advanced-layout-pdf.png
+image: pages/dash.png
 search: false
 execute:
   echo: false
@@ -12,7 +12,7 @@ listing:
     template: conferences.ejs
     contents: conferences.yml
 description: |
-  A gallery of example documents, websites, books, and presentations created with Quarto.
+  A list of current and upcoming conferences.
 ---
 
 ::: {.grid .column-page}

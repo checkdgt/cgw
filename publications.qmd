@@ -1,7 +1,14 @@
 ---
+pagetitle: "Publications"
 format:
     html:
         page-layout: custom
+image: pages/dash.png
+search: false
+execute:
+  echo: false
+description: |
+  A list of my publications.
 ---
 
 ::: {.grid .top-grid}
