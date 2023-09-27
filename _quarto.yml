@@ -3,12 +3,20 @@ project:
 
 website:
   title: "Code Gone Wild"
+  page-footer: "Copyright 2023, Antony Bartlett"
   navbar:
     logo: "img/logo.png"
     background: secondary
     tools:
       - icon: github
+        target: "_"
         href: https://github.com/checkdgt
+      - icon: linkedin
+        href: https://nl.linkedin.com/in/antony-bartlett-test-ninja
+      - icon: sunrise
+        href: https://bsky.app/profile/checkdgt.bsky.social
+      - icon: twitter
+        href: https://twitter.com/_test_ninja
     left:
       - href: index.qmd
         text: Home
