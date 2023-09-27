@@ -1,2 +1,4 @@
 # cgw
-Code Gone WIld webpage
+Code Gone Wild webpage code
+
+Built using Quarto
