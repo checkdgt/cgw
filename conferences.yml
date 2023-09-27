@@ -10,13 +10,26 @@
       thumbnail: img/conf/6486.svg
       paper: '10/25/2023'
       abstract: '10/18/2023'
-    - title: ICSE'24
-      subtitle: SBFT'24
+    - title: SBFT'24
+      subtitle: ICSE'24
       href: https://sbft24.github.io/
       code: sbft24
       thumbnail: img/conf/7634.svg
       paper: '11/09/2023'
       comp: '11/09/2023'
+    - title: ICSE'24
+      subtitle: ICSE'24
+      href: https://nlbse2024.github.io/
+      code: nlbse24
+      thumbnail: img/conf/7134.svg
+      paper: '11/09/2023'
+      comp: '11/09/2023'
+    - title: ISSTA'24
+      subtitle: ''
+      href: https://2024.issta.org/
+      code: issta24
+      thumbnail: img/conf/12381.svg
+      paper: '12/15/2023'
 
 - category: Waiting for a date
   description: |
@@ -27,3 +40,9 @@
       href: https://2024.esec-fse.org/
       code: fscesec24
       thumbnail: img/conf/9232.svg
+    - title: ASE'24
+      subtitle: ''
+      href: https://conf.researchr.org/series/ase
+      code: ase24
+      thumbnail: img/conf/6776.svg
+      
