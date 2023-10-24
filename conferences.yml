@@ -30,6 +30,12 @@
       code: issta24
       thumbnail: img/conf/12381.svg
       paper: '12/15/2023'
+    - title: USENIX'24
+      subtitle: '12511'
+      href: https://www.usenix.org/conference/usenixsecurity24
+      code: usenix24
+      thumbnail:
+      paper: '02/08/2024'
 
 - category: Waiting for a date
   description: |
