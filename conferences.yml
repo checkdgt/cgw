@@ -3,6 +3,41 @@
   description: |
     Just keeping a list of upcoming conferences that are of interest to me ^_^
   tiles:
+    - title: ISSTA'24
+      subtitle: ''
+      href: https://2024.issta.org/
+      code: issta24
+      thumbnail: img/conf/12381.svg
+      paper: '12/15/2023'
+    - title: USENIX'24
+      subtitle: ''
+      href: https://www.usenix.org/conference/usenixsecurity24
+      code: usenix24
+      thumbnail: img/conf/12773.svg
+      paper: '02/08/2024'
+    - title: FSC/ESEC'24
+      subtitle: ''
+      href: https://2024.esec-fse.org/
+      code: fscesec24
+      thumbnail: img/conf/9232.svg
+      paper: '12/13/2023'
+    - title: ASE'24
+      subtitle: ''
+      href: https://conf.researchr.org/home/ase-2024
+      code: ase24
+      thumbnail: img/conf/6776.svg
+      abstract: '05/31/2024'
+      paper: '06/07/2024'
+
+#- category: Waiting for a date
+#  description: |
+#    Important conferences which may not have a date available yet ...
+#  tiles:
+      
+- category: Finished
+  description: |
+    Conferences whose date has passed.
+  tiles:
     - title: ICST'24
       subtitle: ''
       href: https://conf.researchr.org/home/icst-2024
@@ -24,31 +59,3 @@
       thumbnail: img/conf/7134.svg
       paper: '11/09/2023'
       comp: '11/09/2023'
-    - title: ISSTA'24
-      subtitle: ''
-      href: https://2024.issta.org/
-      code: issta24
-      thumbnail: img/conf/12381.svg
-      paper: '12/15/2023'
-    - title: USENIX'24
-      subtitle: '12511'
-      href: https://www.usenix.org/conference/usenixsecurity24
-      code: usenix24
-      thumbnail:
-      paper: '02/08/2024'
-
-- category: Waiting for a date
-  description: |
-    Important conferences which may not have a date available yet ...
-  tiles:
-    - title: FSC/ESEC'24
-      subtitle: ''
-      href: https://2024.esec-fse.org/
-      code: fscesec24
-      thumbnail: img/conf/9232.svg
-    - title: ASE'24
-      subtitle: ''
-      href: https://conf.researchr.org/series/ase
-      code: ase24
-      thumbnail: img/conf/6776.svg
-      
