@@ -3,12 +3,28 @@
   description: |
     Just keeping a list of upcoming conferences that are of interest to me ^_^
   tiles:
-    - title: ISSTA'24
+    - title: ISSTA'25
       subtitle: ''
-      href: https://2024.issta.org/
-      code: issta24
+      href: https://conf.researchr.org/home/issta-2025
+      code: issta25
       thumbnail: img/conf/12381.svg
-      paper: '12/15/2023'
+      paper: '10/31/2024'
+    - title: GECCO'25
+      subtitle: ''
+      href: https://gecco-2025.sigevo.org/
+      code: gecco25
+      thumbnail: img/conf/12397.svg
+      paper: '01/31/2025'
+
+#- category: Waiting for a date
+#  description: |
+#    Important conferences which may not have a date available yet ...
+#  tiles:
+      
+- category: Finished
+  description: |
+    Conferences whose date has passed.
+  tiles:
     - title: USENIX'24
       subtitle: ''
       href: https://www.usenix.org/conference/usenixsecurity24
@@ -21,27 +37,17 @@
       code: fscesec24
       thumbnail: img/conf/9232.svg
       paper: '12/13/2023'
-    - title: ASE'24
+    - title: ASE'25
       subtitle: ''
       href: https://conf.researchr.org/home/ase-2024
-      code: ase24
+      code: ase25
       thumbnail: img/conf/6776.svg
       abstract: '05/31/2024'
       paper: '06/07/2024'
-
-#- category: Waiting for a date
-#  description: |
-#    Important conferences which may not have a date available yet ...
-#  tiles:
-      
-- category: Finished
-  description: |
-    Conferences whose date has passed.
-  tiles:
-    - title: ICST'24
+    - title: ICST'25
       subtitle: ''
       href: https://conf.researchr.org/home/icst-2024
-      code: icst24
+      code: icst25
       thumbnail: img/conf/6486.svg
       paper: '10/25/2023'
       abstract: '10/18/2023'
@@ -52,10 +58,10 @@
       thumbnail: img/conf/7634.svg
       paper: '11/09/2023'
       comp: '11/09/2023'
-    - title: ICSE'24
-      subtitle: ICSE'24
+    - title: ICSE'25
+      subtitle: ''
       href: https://nlbse2024.github.io/
-      code: nlbse24
+      code: icse25
       thumbnail: img/conf/7134.svg
       paper: '11/09/2023'
       comp: '11/09/2023'

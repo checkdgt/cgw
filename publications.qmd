@@ -23,3 +23,27 @@ description: |
 ::: {.g-col-2}
 :::
 :::
+::: {.grid .top-grid}
+::: {.g-col-2}
+:::
+::: {.g-col-1}
+![](img/book-svgrepo-com.svg){width=60% height=60%}
+:::
+::: {.g-col-5}
+<a target="_" href="https://www.sciencedirect.com/science/article/pii/S0167642324000923">Multi-objective differential evolution in the generation of adversarial examples</a>
+:::
+::: {.g-col-2}
+:::
+:::
+::: {.grid .top-grid}
+::: {.g-col-2}
+:::
+::: {.g-col-1}
+![](img/paper-with-text-svgrepo-com.svg){width=50% height=50%}
+:::
+::: {.g-col-5}
+<a target="_" href="https://link.springer.com/chapter/10.1007/978-3-031-64573-0_8">Danger is My Middle Lane: Simulations from Real-World Dangerous Roads</a>
+:::
+::: {.g-col-2}
+:::
+:::
