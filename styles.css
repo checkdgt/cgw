@@ -1,3 +1,36 @@
+footer.footer, .nav-footer {
+    background: rgba(255,255,255,0.0) !important; /* semi-transparent white, adjust as needed */
+    color: #222 !important; /* dark text, adjust as needed */
+}
+@media (max-width: 768px) {
+    footer.footer, .nav-footer {
+        background: rgba(255,255,255,0.0) !important;
+        color: #222 !important;
+    }
+}
+footer.footer, .nav-footer {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    min-height: 0 !important;
+    height: auto !important;
+}
+@media (max-width: 768px) {
+    footer.footer, .nav-footer {
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+        min-height: 0 !important;
+        height: 20px !important;
+    }
+}
+@media (max-width: 768px) {
+  footer img[src*="quarto.png"], img[src*="quarto.png"] {
+    width: 52px !important;
+    height: auto !important;
+    max-width: 40vw !important;
+    display: inline-block !important;
+    vertical-align: middle;
+  }
+}
 /* Force gradient background on all wrappers for highest priority */
 /* Place at end for highest priority */
 /* --- Responsive columns for mobile --- */
@@ -215,39 +248,20 @@ h2 {
         display: block !important;
         line-height: 1.2 !important;
     }
-    /* .navbar-title {
-        max-width: 100vw !important;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        flex: 1 1 auto !important;
-        min-width: 0 !important;
-    } */
 }
-/* @media (max-width: 768px) {
-  .navbar-default {
-    padding: 0 1% !important;
+@media (max-width: 768px) {
+  /* Target all images and SVGs in the publications page */
+  .publications-page img,
+  .publications-page svg {
+    max-width: 48px !important;
+    max-height: 48px !important;
+    width: auto !important;
+    height: auto !important;
   }
-  .navbar-container.container-fluid {
-    display: flex !important;
-    flex-wrap: nowrap !important;
+  /* If you use custom classes for icons, add them here */
+  img.paper-icon,
+  img.book-icon {
+    max-width: 48px !important;
+    max-height: 48px !important;
   }
-  .navbar-brand-container.mx-auto {
-    flex: 1 1 100% !important;
-    width: 100% !important;
-    min-width: 0 !important;
-  }
-  .navbar-toggler,
-  .quarto-search,
-  .quarto-navbar-tools,
-  .collapse.navbar-collapse {
-    flex: 0 0 auto !important;
-    display: none !important;
-  }
-  .navbar-title {
-    width: 100% !important;
-    overflow: visible !important;
-    text-overflow: unset !important;
-    white-space: normal !important;
-  }
-} */
+}

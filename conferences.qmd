@@ -1,83 +1,52 @@
 ---
 pagetitle: "Conferences"
 format:
-  html:
-    toc: false
+    html:
+        page-layout: custom
+include-before-body:
+  text: |
+    <script src="js/persist-theme.js"></script>  
+    <script src="js/gradient-bg.js"></script>  
 image: pages/dash.png
 search: false
 execute:
   echo: false
-listing:
-  - id: gallery
-    template: conferences.ejs
-    contents: conferences.yml
 description: |
-  A list of current and upcoming conferences.
+  A list of conferences in which I assisted.
 ---
 
-::: {.grid .column-page}
-
+::: {.grid .top-grid}
+::: {.g-col-2}
 :::
-
-::: {#gallery .column-page}
+::: {.g-col-1 .publications-page}
+![](img/papers.svg){width=70% height=70%}
 :::
-
-```{=html}
-<style>
-
-#hero-banner {
-  padding-top: 35px;
-  background-color: rgb(237,243,249);
-}
-
-#quarto-content main { 
-  margin-top: 0;
-  padding-top: 0;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-.headline {
-font-size: 1.25em;
-font-weight: 300;
-padding-bottom: 1em;
-}
-
-.headline p {
-  margin: 0;
-  padding-bottom: 0.2rem;
-}
-
-.headline a {
-  text-decoration: none;
-}
-
-.headline ul li {
-  margin-bottom: 0.3em;
-}
-
-.carousel.card {
-  padding-top: 2em;
-}
-
-.carousel img {
-  width: 70%;
-  margin-bottom: 110px;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  margin-bottom: 110px;
-}
-
-.carousel-caption {
-  padding-top: 1em;
-}
-
-.touch {
-  
-}
-</style>
-```
+::: {.g-col-5}
+<a target="_" href="https://research.tudelft.nl/en/publications/on-the-strengths-of-pure-evolutionary-algorithms-in-generating-ad">On the Strengths of Pure Evolutionary Algorithms in Generating Adversarial Examples</a>
+:::
+::: {.g-col-2}
+:::
+:::
+::: {.grid .top-grid}
+::: {.g-col-2}
+:::
+::: {.g-col-1 .publications-page}
+![](img/book-svgrepo-com.svg){width=60% height=50%}
+:::
+::: {.g-col-5}
+<a target="_" href="https://www.sciencedirect.com/science/article/pii/S0167642324000923">Multi-objective differential evolution in the generation of adversarial examples</a>
+:::
+::: {.g-col-2}
+:::
+:::
+::: {.grid .top-grid}
+::: {.g-col-2}
+:::
+::: {.g-col-1 .publications-page}
+![](img/paper-with-text-svgrepo-com.svg){width=50% height=50%}
+:::
+::: {.g-col-5}
+<a target="_" href="https://link.springer.com/chapter/10.1007/978-3-031-64573-0_8">Danger is My Middle Lane: Simulations from Real-World Dangerous Roads</a>
+:::
+::: {.g-col-2}
+:::
