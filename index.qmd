@@ -17,7 +17,7 @@ include-before-body:
 :::
 ::: {.g-col-5}
 :::{.h2 .text-warning}
-Antony Bartlett PhD
+Antony Bartlett PhD Candidate
 :::
 
 :::{.text-info}
