@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Code Gone Wild"
-  page-footer: "Copyright 2023, Antony Bartlett"
+  page-footer: "Copyright 2025, Antony Bartlett"
   navbar:
     logo: "img/logo.png"
     background: secondary
@@ -22,14 +22,14 @@ website:
         text: Home
       - href: publications.qmd
         text: My Work
-      - href: conferences.qmd
-        text: Conferences
+      # - href: conferences.qmd
+      #   text: Conferences
 
 format:
   html:
     theme:
       light: vapor
-      dark: darkly
+      # dark: darkly
     mainfont: monospace
     fontsize: 1.1em
     linestretch: 1.1
