@@ -5,7 +5,6 @@ format:
         page-layout: custom
 include-before-body:
   text: |
-    <script src="js/persist-theme.js"></script>  
     <script src="js/gradient-bg.js"></script>  
 image: pages/dash.png
 search: false
