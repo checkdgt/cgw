@@ -1,75 +1,26 @@
 ---
 pagetitle: "Publications"
 format:
-    html:
-        page-layout: custom
-include-before-body:
-  text: |
-    <script src="js/gradient-bg.js"></script>  
+  html:
+    toc: false
+    page-layout: custom
 image: pages/dash.png
 search: false
 execute:
   echo: false
+listing:
+  - id: publications-timeline
+    template: publications.ejs
+    contents: publications.yml
+include-before-body:
+  text: |
+    <script src="js/gradient-bg.js"></script>
 description: |
-  A list of my publications.
+  A timeline of my academic publications and research contributions.
 ---
 
-::: {.grid .top-grid}
-::: {.g-col-2}
+::: {.grid .column-page}
 :::
-::: {.g-col-1 .publications-page}
-![](img/papers.svg){width=70% height=70%}
-:::
-::: {.g-col-5}
-<a target="_" href="https://research.tudelft.nl/en/publications/on-the-strengths-of-pure-evolutionary-algorithms-in-generating-ad">On the Strengths of Pure Evolutionary Algorithms in Generating Adversarial Examples (Best paper award!)</a>
-:::
-::: {.g-col-2}
-:::
-:::
-::: {.grid .top-grid}
-::: {.g-col-2}
-:::
-::: {.g-col-1 .publications-page}
-![](img/book-svgrepo-com.svg){width=60% height=50%}
-:::
-::: {.g-col-5}
-<a target="_" href="https://www.sciencedirect.com/science/article/pii/S0167642324000923">Multi-objective differential evolution in the generation of adversarial examples</a>
-:::
-::: {.g-col-2}
-:::
-:::
-::: {.grid .top-grid}
-::: {.g-col-2}
-:::
-::: {.g-col-1 .publications-page}
-![](img/paper-with-text-svgrepo-com.svg){width=50% height=50%}
-:::
-::: {.g-col-5}
-<a target="_" href="https://link.springer.com/chapter/10.1007/978-3-031-64573-0_8">Danger is My Middle Lane: Simulations from Real-World Dangerous Roads</a>
-:::
-::: {.g-col-2}
-:::
-:::
-::: {.grid .top-grid}
-::: {.g-col-2}
-:::
-::: {.g-col-1 .publications-page}
-![](img/paper-with-text-svgrepo-com.svg){width=50% height=50%}
-:::
-::: {.g-col-5}
-<a target="_" href="https://research.tudelft.nl/en/publications/position-stop-making-unscientific-agi-performance-claims">Position: Stop Making Unscientific AGI Performance Claims</a>
-:::
-::: {.g-col-2}
-:::
-:::
-::: {.grid .top-grid}
-::: {.g-col-2}
-:::
-::: {.g-col-1 .publications-page}
-![](img/paper-with-text-svgrepo-com.svg){width=50% height=50%}
-:::
-::: {.g-col-5}
-<a target="_" href="https://research.tudelft.nl/en/publications/drvn-at-the-icst-2025-tool-competition-self-driving-car-testing-t">DRVN at the ICST 2025 Tool Competition – Self-Driving Car Testing Track</a>
-:::
-::: {.g-col-2}
+
+::: {#publications-timeline .column-page}
 :::
