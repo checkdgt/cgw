@@ -1,0 +1,45 @@
+- type: "conference"
+  year: 2025
+  title: "DRVN at the ICST 2025 Tool Competition – Self-Driving Car Testing Track"
+  href: "https://research.tudelft.nl/en/publications/drvn-at-the-icst-2025-tool-competition-self-driving-car-testing-t"
+  venue: "International Conference on Software Testing"
+  authors: "Antony Bartlett, Cynthia Liem, Annibale Panichella"
+  description: "Tool competition entry for automated regression testing in self-driving car testing"
+  icon: "img/paper-with-text-svgrepo-com.svg"
+
+- type: "conference"
+  year: 2024
+  title: "Position: Stop Making Unscientific AGI Performance Claims"
+  href: "https://research.tudelft.nl/en/publications/position-stop-making-unscientific-agi-performance-claims"
+  venue: "International Conference on Machine Learning"
+  authors: "Antony Bartlett, Cynthia Liem, Annibale Panichella"
+  description: "Position paper on scientific rigor for AGI claims"
+  icon: "img/paper-with-text-svgrepo-com.svg"
+
+- type: "conference"
+  year: 2024
+  title: "Danger is My Middle Lane: Simulations from Real-World Dangerous Roads"
+  href: "https://link.springer.com/chapter/10.1007/978-3-031-64573-0_8"
+  venue: "SSBSE Co-Located with ASE"
+  authors: "Antony Bartlett, Annibale Panichella"
+  description: "Conference paper on autonomous vehicle testing in dangerous scenarios"
+  icon: "img/paper-with-text-svgrepo-com.svg"
+
+- type: "journal"
+  year: 2024
+  title: "Multi-objective differential evolution in the generation of adversarial examples"
+  href: "https://www.sciencedirect.com/science/article/pii/S0167642324000923"
+  venue: "Elsevier - Science of Computer Programming"
+  authors: "Antony Bartlett, Cynthia Liem, Annibale Panichella"
+  description: "Journal publication on multi-objective optimization for adversarial examples"
+  icon: "img/book-svgrepo-com.svg"
+
+- type: "award"
+  year: 2023
+  title: "On the Strengths of Pure Evolutionary Algorithms in Generating Adversarial Examples"
+  href: "https://research.tudelft.nl/en/publications/on-the-strengths-of-pure-evolutionary-algorithms-in-generating-ad"
+  venue: "SBFT Co-Located with ICSE"
+  authors: "Antony Bartlett, Cynthia Liem, Annibale Panichella"
+  description: "Research on multi-objective evolutionary algorithms for adversarial example generation"
+  award: "Best Paper Award"
+  icon: "img/papers.svg"

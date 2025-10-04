@@ -1,0 +1,55 @@
+- type: "conference"
+  year: 2025
+  conference: "SSBSE"
+  position: "Program Committee SSBSE Challenge" 
+  location: "Seoul, South Korea"
+  # description: "Led program committee for premier testing conference"
+  # href: "https://conference-link.com"
+
+- type: "reviewer"
+  year: 2025
+  journal: "IEEE Transactions on Software Engineering"
+  papers_reviewed: 1
+  # description: "Reviewed papers on AI testing methodologies"
+  # href: "https://journal-link.com"
+
+- type: "conference"
+  year: 2025
+  conference: "SBFT"
+  position: "Social Co-Chair"
+  location: "Ottawa, Canada"
+
+- type: "conference"
+  year: 2024
+  conference: "SSBSE"
+  position: "Publicity Chair"
+  location: "Porto De Galinhas, Brazil"
+
+- type: "conference"
+  year: 2024
+  conference: "SBFT"
+  position: "Website Co-Chair"
+  location: "Lisbon, Portugal"
+
+- type: "reviewer"
+  year: 2024
+  journal: "IEEE Transactions on Software Engineering"
+  papers_reviewed: 2
+  
+- type: "conference"
+  year: 2023
+  conference: "ICSE"
+  position: "Student Volunteer"
+  location: "Melbourne, Australia"
+  
+- type: "conference"
+  year: 2022
+  conference: "A-TEST"
+  position: "Publicity & Web Chair"
+  location: "Singapore"
+
+- type: "conference"
+  year: 2022
+  conference: "ICST"
+  position: "Student Volunteer"
+  location: "Virtual Conference"

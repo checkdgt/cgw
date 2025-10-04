@@ -10,5 +10,11 @@
   },
   "conferences.qmd": {
     "conferences.html": "1017c994"
+  },
+  "academic.qmd": {
+    "academic.html": "57a5c5cd"
+  },
+  "conferences_old.qmd": {
+    "conferences_old.html": "831846ae"
   }
 }
