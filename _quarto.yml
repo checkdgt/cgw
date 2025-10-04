@@ -22,8 +22,8 @@ website:
         text: Home
       - href: publications.qmd
         text: My Work
-      # - href: conferences.qmd
-      #   text: Conferences
+      - href: academic.qmd
+        text: Academic Service
 
 format:
   html:

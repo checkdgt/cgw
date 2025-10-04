@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A list of conferences in which I assisted.">
+<meta name="description" content="A list of current and upcoming conferences.">
 
 <title>Conferences – Code Gone Wild</title>
 <style>
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -68,12 +70,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-gallery .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-category','listing-description','listing-tiles',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-category","listing-description","listing-tiles"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-gallery'] = new List('listing-gallery', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -117,62 +177,387 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
-<script src="js/persist-theme.js"></script>
-<script src="js/gradient-bg.js"></script>
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<div class="grid top-grid">
-<div class="g-col-2">
+<div class="grid column-page">
 
 </div>
-<div class="g-col-1 publications-page">
-<p><img src="img/papers.svg" style="width:70.0%;height:70.0%"></p>
-</div>
-<div class="g-col-5">
-<p><a target="_" href="https://research.tudelft.nl/en/publications/on-the-strengths-of-pure-evolutionary-algorithms-in-generating-ad">On the Strengths of Pure Evolutionary Algorithms in Generating Adversarial Examples</a></p>
-</div>
-<div class="g-col-2">
+<div id="listing-gallery" class="column-page quarto-listing quarto-listing-container-custom">
+<script>
+  // Set the date we're counting down to
+  function setTimer(date, uid) {
+    let countDownDate = new Date(date).getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById(uid).innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById(uid).innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  }
+</script>
+<script>
+  function getTime(end_time) {
+      let end = new Date(end_time);
+      return end
+  }
+</script>
+
+<h2 class="text-warning anchored">Upcoming Conferences</h2>
+
+<p>Just keeping a list of upcoming conferences that are of interest to me ^_^
+</p>
+
+<div class="list grid" style="column-gap: 10px;">
+
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="0">
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <small class="card-text inline-block">
+        <a target="_blank" href="https://conf.researchr.org/home/issta-2025" class="listing-title" style="color: DarkSlateBlue">ISSTA'25</a>
+         
+        <a target="_blank" href="https://conf.researchr.org/home/issta-2025" title="View source code" class="source-code card-text float-end inline-block">
+          <i class="bi-balloon-heart-fill"></i>
+        </a>
+        
+        <span class="text-muted listing-subtitle"></span>
+        <hr>
+        
+         
+          <div>Paper: <div id="paperissta25"></div></div>
+          <script>setTimer("10/31/2024", "paperissta25");</script>
+          <br>
+        
+        
+        <br>
+      </small>
+      <a href="https://conf.researchr.org/home/issta-2025">
+        <img src="img/conf/12381.svg" alt="" class="card-img-top" width="200" height="200">
+      </a>
+    </div>
+    
+    
+    
+  </div>
+
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="1">
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <small class="card-text inline-block">
+        <a target="_blank" href="https://gecco-2025.sigevo.org/" class="listing-title" style="color: DarkSlateBlue">GECCO'25</a>
+         
+        <a target="_blank" href="https://gecco-2025.sigevo.org/" title="View source code" class="source-code card-text float-end inline-block">
+          <i class="bi-balloon-heart-fill"></i>
+        </a>
+        
+        <span class="text-muted listing-subtitle"></span>
+        <hr>
+        
+         
+          <div>Paper: <div id="papergecco25"></div></div>
+          <script>setTimer("01/31/2025", "papergecco25");</script>
+          <br>
+        
+        
+        <br>
+      </small>
+      <a href="https://gecco-2025.sigevo.org/">
+        <img src="img/conf/12397.svg" alt="" class="card-img-top" width="200" height="200">
+      </a>
+    </div>
+    
+    
+    
+  </div>
 
 </div>
-</div>
-<div class="grid top-grid">
-<div class="g-col-2">
+
+<h2 class="text-warning anchored">Finished</h2>
+
+<p>Conferences whose date has passed.
+</p>
+
+<div class="list grid" style="column-gap: 10px;">
+
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="2">
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <small class="card-text inline-block">
+        <a target="_blank" href="https://www.usenix.org/conference/usenixsecurity24" class="listing-title" style="color: DarkSlateBlue">USENIX'24</a>
+         
+        <a target="_blank" href="https://www.usenix.org/conference/usenixsecurity24" title="View source code" class="source-code card-text float-end inline-block">
+          <i class="bi-balloon-heart-fill"></i>
+        </a>
+        
+        <span class="text-muted listing-subtitle"></span>
+        <hr>
+        
+         
+          <div>Paper: <div id="paperusenix24"></div></div>
+          <script>setTimer("02/08/2024", "paperusenix24");</script>
+          <br>
+        
+        
+        <br>
+      </small>
+      <a href="https://www.usenix.org/conference/usenixsecurity24">
+        <img src="img/conf/12773.svg" alt="" class="card-img-top" width="200" height="200">
+      </a>
+    </div>
+    
+    
+    
+  </div>
+
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="3">
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <small class="card-text inline-block">
+        <a target="_blank" href="https://2024.esec-fse.org/" class="listing-title" style="color: DarkSlateBlue">FSC/ESEC'24</a>
+         
+        <a target="_blank" href="https://2024.esec-fse.org/" title="View source code" class="source-code card-text float-end inline-block">
+          <i class="bi-balloon-heart-fill"></i>
+        </a>
+        
+        <span class="text-muted listing-subtitle"></span>
+        <hr>
+        
+         
+          <div>Paper: <div id="paperfscesec24"></div></div>
+          <script>setTimer("12/13/2023", "paperfscesec24");</script>
+          <br>
+        
+        
+        <br>
+      </small>
+      <a href="https://2024.esec-fse.org/">
+        <img src="img/conf/9232.svg" alt="" class="card-img-top" width="200" height="200">
+      </a>
+    </div>
+    
+    
+    
+  </div>
+
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="4">
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <small class="card-text inline-block">
+        <a target="_blank" href="https://conf.researchr.org/home/ase-2024" class="listing-title" style="color: DarkSlateBlue">ASE'25</a>
+         
+        <a target="_blank" href="https://conf.researchr.org/home/ase-2024" title="View source code" class="source-code card-text float-end inline-block">
+          <i class="bi-balloon-heart-fill"></i>
+        </a>
+        
+        <span class="text-muted listing-subtitle"></span>
+        <hr>
+         
+          <div>Abstract: <div id="abstractase25"></div></div>
+          <script>setTimer("05/31/2024", "abstractase25");</script>
+          <br>
+        
+         
+          <div>Paper: <div id="paperase25"></div></div>
+          <script>setTimer("06/07/2024", "paperase25");</script>
+          <br>
+        
+        
+        <br>
+      </small>
+      <a href="https://conf.researchr.org/home/ase-2024">
+        <img src="img/conf/6776.svg" alt="" class="card-img-top" width="200" height="200">
+      </a>
+    </div>
+    
+    
+    
+  </div>
+
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="5">
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <small class="card-text inline-block">
+        <a target="_blank" href="https://conf.researchr.org/home/icst-2024" class="listing-title" style="color: DarkSlateBlue">ICST'25</a>
+         
+        <a target="_blank" href="https://conf.researchr.org/home/icst-2024" title="View source code" class="source-code card-text float-end inline-block">
+          <i class="bi-balloon-heart-fill"></i>
+        </a>
+        
+        <span class="text-muted listing-subtitle"></span>
+        <hr>
+         
+          <div>Abstract: <div id="abstracticst25"></div></div>
+          <script>setTimer("10/18/2023", "abstracticst25");</script>
+          <br>
+        
+         
+          <div>Paper: <div id="papericst25"></div></div>
+          <script>setTimer("10/25/2023", "papericst25");</script>
+          <br>
+        
+        
+        <br>
+      </small>
+      <a href="https://conf.researchr.org/home/icst-2024">
+        <img src="img/conf/6486.svg" alt="" class="card-img-top" width="200" height="200">
+      </a>
+    </div>
+    
+    
+    
+  </div>
+
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="6">
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <small class="card-text inline-block">
+        <a target="_blank" href="https://sbft24.github.io/" class="listing-title" style="color: DarkSlateBlue">SBFT'24</a>
+         
+        <a target="_blank" href="https://sbft24.github.io/" title="View source code" class="source-code card-text float-end inline-block">
+          <i class="bi-balloon-heart-fill"></i>
+        </a>
+        
+        <span class="text-muted listing-subtitle">ICSE'24</span>
+        <hr>
+        
+         
+          <div>Paper: <div id="papersbft24"></div></div>
+          <script>setTimer("11/09/2023", "papersbft24");</script>
+          <br>
+        
+        
+          <br>
+          <div>Competition: <div id="compsbft24"></div></div>
+          <script>setTimer("11/09/2023", "compsbft24");</script>
+        
+        <br>
+      </small>
+      <a href="https://sbft24.github.io/">
+        <img src="img/conf/7634.svg" alt="" class="card-img-top" width="200" height="200">
+      </a>
+    </div>
+    
+    
+    
+  </div>
+
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2" data-index="7">
+    <div class="card-header py-1 px-2 border-bottom border-1 bg-light">
+      <small class="card-text inline-block">
+        <a target="_blank" href="https://nlbse2024.github.io/" class="listing-title" style="color: DarkSlateBlue">ICSE'25</a>
+         
+        <a target="_blank" href="https://nlbse2024.github.io/" title="View source code" class="source-code card-text float-end inline-block">
+          <i class="bi-balloon-heart-fill"></i>
+        </a>
+        
+        <span class="text-muted listing-subtitle"></span>
+        <hr>
+        
+         
+          <div>Paper: <div id="papericse25"></div></div>
+          <script>setTimer("11/09/2023", "papericse25");</script>
+          <br>
+        
+        
+          <br>
+          <div>Competition: <div id="compicse25"></div></div>
+          <script>setTimer("11/09/2023", "compicse25");</script>
+        
+        <br>
+      </small>
+      <a href="https://nlbse2024.github.io/">
+        <img src="img/conf/7134.svg" alt="" class="card-img-top" width="200" height="200">
+      </a>
+    </div>
+    
+    
+    
+  </div>
 
 </div>
-<div class="g-col-1 publications-page">
-<p><img src="img/book-svgrepo-com.svg" style="width:60.0%;height:50.0%"></p>
-</div>
-<div class="g-col-5">
-<p><a target="_" href="https://www.sciencedirect.com/science/article/pii/S0167642324000923">Multi-objective differential evolution in the generation of adversarial examples</a></p>
-</div>
-<div class="g-col-2">
 
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-</div>
-<div class="grid top-grid">
-<div class="g-col-2">
+<style>
 
-</div>
-<div class="g-col-1 publications-page">
-<p><img src="img/paper-with-text-svgrepo-com.svg" style="width:50.0%;height:50.0%"></p>
-</div>
-<div class="g-col-5">
-<p><a target="_" href="https://link.springer.com/chapter/10.1007/978-3-031-64573-0_8">Danger is My Middle Lane: Simulations from Real-World Dangerous Roads</a></p>
-</div>
-<div class="g-col-2">
+#hero-banner {
+  padding-top: 35px;
+  background-color: rgb(237,243,249);
+}
 
-</div>
+#quarto-content main { 
+  margin-top: 0;
+  padding-top: 0;
+}
 
 
-</div>
+html {
+  scroll-behavior: smooth;
+}
+
+.headline {
+font-size: 1.25em;
+font-weight: 300;
+padding-bottom: 1em;
+}
+
+.headline p {
+  margin: 0;
+  padding-bottom: 0.2rem;
+}
+
+.headline a {
+  text-decoration: none;
+}
+
+.headline ul li {
+  margin-bottom: 0.3em;
+}
+
+.carousel.card {
+  padding-top: 2em;
+}
+
+.carousel img {
+  width: 70%;
+  margin-bottom: 110px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  margin-bottom: 110px;
+}
+
+.carousel-caption {
+  padding-top: 1em;
+}
+
+.touch {
+  
+}
+</style>
 
 
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

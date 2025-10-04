@@ -6,8 +6,8 @@ function setGradientBackground() {
     body.style.background = 'linear-gradient(135deg, #181a1b 0%, #12a2ea 100%)';
   } else {
     // Light mode
-    // body.style.background = 'linear-gradient(135deg, #40526d 0%, #86888d 100%)';
     body.style.background = 'linear-gradient(135deg, #181a1b 0%, #12a2ea 100%)';
+    // body.style.background = 'linear-gradient(135deg, #40526d 0%, #86888d 100%)';
   }
   body.style.backgroundSize = 'cover';
   body.style.backgroundAttachment = 'fixed';
