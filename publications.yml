@@ -1,5 +1,23 @@
 - type: "conference"
   year: 2025
+  title: "PRE-PRINT - The Pursuit of Diversity: Multi-Objective Testing of Deep Reinforcement Learning Agents"
+  href: "https://arxiv.org/pdf/2510.14727"
+  venue: "SSBSE Co-Located with ASE"
+  authors: "Antony Bartlett, Cynthia Liem, Annibale Panichella"
+  description: "Finding diverse test cases for deep reinforcement learning agents using multi-objective optimization"
+  icon: "img/paper-fold-text-line-svgrepo-com.svg"
+
+- type: "conference"
+  year: 2025
+  title: "PRE-PRINT - The Last Dependency Crusade: Solving Python Dependency Conflicts with LLMs"
+  href: "https://arxiv.org/pdf/2501.16191"
+  venue: "AgenticSE Co-Located with ASE"
+  authors: "Antony Bartlett, Cynthia Liem, Annibale Panichella"
+  description: "Fixing Python dependency conflicts using large language models"
+  icon: "img/paper-fold-text-line-svgrepo-com.svg"
+
+- type: "conference"
+  year: 2025
   title: "DRVN at the ICST 2025 Tool Competition – Self-Driving Car Testing Track"
   href: "https://research.tudelft.nl/en/publications/drvn-at-the-icst-2025-tool-competition-self-driving-car-testing-t"
   venue: "International Conference on Software Testing"
