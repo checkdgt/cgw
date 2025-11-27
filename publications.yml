@@ -1,11 +1,12 @@
-- type: "conference"
+- type: "award"
   year: 2025
   title: "PRE-PRINT - The Pursuit of Diversity: Multi-Objective Testing of Deep Reinforcement Learning Agents"
   href: "https://arxiv.org/pdf/2510.14727"
   venue: "SSBSE Co-Located with ASE"
   authors: "Antony Bartlett, Cynthia Liem, Annibale Panichella"
   description: "Finding diverse test cases for deep reinforcement learning agents using multi-objective optimization"
-  icon: "img/paper-fold-text-line-svgrepo-com.svg"
+  award: "Best Paper Award"
+  icon: "img/papers.svg"
 
 - type: "conference"
   year: 2025

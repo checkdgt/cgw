@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-type','listing-year','listing-title','listing-href','listing-venue','listing-authors','listing-description','listing-icon','listing-award',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-type','listing-year','listing-title','listing-href','listing-venue','listing-authors','listing-description','listing-award','listing-icon',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-type","listing-year","listing-title","listing-href","listing-venue","listing-authors","listing-description","listing-icon","listing-award"],
+      searchColumns: ["listing-type","listing-year","listing-title","listing-href","listing-venue","listing-authors","listing-description","listing-award","listing-icon"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -375,9 +375,9 @@ window.Quarto = {
 <div class="timeline">
   
   
-    <div class="timeline-item conference left">
+    <div class="timeline-item award left">
       <div class="timeline-content">
-        <img src="img/paper-fold-text-line-svgrepo-com.svg" alt="conference" class="publication-icon">
+        <img src="img/papers.svg" alt="award" class="publication-icon">
         
         <div class="publication-content">
           <div class="timeline-year">2025</div>
@@ -402,6 +402,10 @@ window.Quarto = {
             </div>
           
           
+          
+            <div class="award-badge">
+              🏆 Best Paper Award
+            </div>
           
         </div>
       </div>

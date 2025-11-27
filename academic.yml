@@ -6,6 +6,14 @@
   # description: "Led program committee for premier testing conference"
   # href: "https://conference-link.com"
 
+- type: "conference"
+  year: 2025
+  conference: "ASE"
+  position: "Student Volunteer" 
+  location: "Seoul, South Korea"
+  # description: "Led program committee for premier testing conference"
+  # href: "https://conference-link.com"
+
 - type: "reviewer"
   year: 2025
   journal: "IEEE Transactions on Software Engineering"
